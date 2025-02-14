@@ -32,7 +32,7 @@ SCSS / CSS (for styling)
 
 1️⃣ Clone the Repository
 
-git clone https://github.com/your-username/usermgmtsystem.git cd usermgmtsystem
+git clone https://github.com/jadhavaksh99/usermgmtsystem.git cd usermgmtsystem
 
 2️⃣ Install Dependencies
 
