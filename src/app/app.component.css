@@ -16,3 +16,31 @@
     color: #fff;
     gap:20px;
 }
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Apply styles for screens smaller than 768px (Mobile) */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  table {
+    width: 100%;
+    display: block;
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+  }
+
+  mat-card {
+    width: auto;
+    padding: auto;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}

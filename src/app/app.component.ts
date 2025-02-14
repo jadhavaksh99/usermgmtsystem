@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'usermgmtsystem';
+  isSidenavOpen = false;
+
+  toggleSidenav() {
+    this.isSidenavOpen = !this.isSidenavOpen;
+  }
 }

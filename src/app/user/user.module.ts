@@ -17,6 +17,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { RouterModule } from '@angular/router';
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import { RouterModule } from '@angular/router';
     MatToolbarModule,
     MatCardModule,
     BrowserAnimationsModule,
+    MatSidenavModule
   ],
   providers: [{ 
     provide: MatDialogRef,
@@ -48,8 +51,7 @@ import { RouterModule } from '@angular/router';
     { 
     provide: MAT_DIALOG_DATA, 
     useValue: [] 
-    }
-  ],
+    }],
   exports: [
     UserListComponent,
     UserFormComponent // Export if used outside UserModule

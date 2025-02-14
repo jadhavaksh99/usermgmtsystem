@@ -1,5 +1,6 @@
+<div class="container">
 <mat-card>
-    <mat-toolbar>
+    <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
       <span>User Management</span>
       <span class="spacer"></span>
       <mat-form-field>
@@ -7,7 +8,7 @@
       </mat-form-field>
       <button mat-raised-button color="primary" (click)="openUserForm()">Add User</button>
     </mat-toolbar>
-  
+    
     <table mat-table [dataSource]="filteredUsers" matSort class="mat-elevation-z8">
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
@@ -75,6 +76,7 @@
   </table>
   
   <mat-paginator [pageSize]="10"></mat-paginator>
-  <button mat-raised-button color="primary" [routerLink]="['/add-user']">
+  <button mat-raised-button color="primary" [routerLink]="['add-user']" routerLinkActive="active-Link">
     Add User
   </button>
+</div>

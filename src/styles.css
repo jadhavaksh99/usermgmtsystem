@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+mat-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between title & buttons */
+    padding: 0 16px;
+  }
+  
+  /* Flex-grow to push items apart */
+  .spacer {
+    flex-grow: 1;
+  }
+  
+  /* Default: Hide menu button, show full buttons */
+  .menu-button {
+    display: none;
+  }
+  
+  /* Hide nav buttons when screen is small */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 16px; /* Reduce title size */
+    }
+  
+    .nav-buttons {
+      display: none; /* Hide buttons */
+    }
+  
+    .menu-button {
+      display: block; /* Show menu button */
+    }
+  }
+  

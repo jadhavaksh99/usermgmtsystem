@@ -4,6 +4,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -14,7 +16,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     UserModule,
     AppRoutingModule,
     BrowserModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule
     
   ],  
   bootstrap: [

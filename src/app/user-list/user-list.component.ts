@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+
 import { MatPaginator } from '@angular/material/paginator';
 import { UserService } from '../services/user.service';
 import { User } from '../models/user.model';
@@ -29,6 +30,7 @@ export class UserListComponent implements OnInit {
     private router: Router) {}
 
   ngOnInit(): void {
+    
     this.loadUsers();
   }
 

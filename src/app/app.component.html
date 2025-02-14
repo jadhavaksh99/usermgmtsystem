@@ -1,12 +1,15 @@
 
+<div class="container">
 <mat-toolbar color="primary">
   <span>User Management System</span>
   <span class="spacer"></span>
+  <div class="nav-buttons">
+    <button mat-raised-button color="accent" routerLink="users" routerLinkActive="active-Link">Users</button>
+    <button mat-raised-button color="accent" routerLink="adduser" routerLinkActive="active-Link">Add User</button>
+  </div>
   
-  <mat-raised-button routerLink="users" routerLinkActive="active-Link">Users</mat-raised-button>
-  <mat-icon-button routerLink="adduser" routerLinkActive="active-Link">Add User</mat-icon-button>
+
+
 </mat-toolbar>
-
-
-  <router-outlet></router-outlet>
-
+<router-outlet></router-outlet>
+</div>
